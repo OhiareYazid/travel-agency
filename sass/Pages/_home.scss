@@ -1,0 +1,31 @@
+.header__home {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(70, 19, 56, 0.75),
+      rgba(70, 19, 56, 0.75)
+    ),
+    url(../img/Hero-Big.png);
+  background-size: cover;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 95%);
+  }
+}
+.header__flight {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(70, 19, 56, 0.75),
+      rgba(70, 19, 56, 0.75)
+    ),
+    url(../img/Hero-Flight.jpg);
+  background-size: cover;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}

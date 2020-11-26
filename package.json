@@ -1,0 +1,17 @@
+{
+  "name": "dharr",
+  "version": "2.0.0",
+  "description": "Travel Agency Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ohiare Yazid (Xenon-Studios)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.2"
+  }
+}

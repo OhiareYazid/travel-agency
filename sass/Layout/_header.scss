@@ -1,0 +1,198 @@
+.header {
+    height: 90vh;
+    
+ &__logo-box{
+     position: absolute;
+     top:4rem;
+     left:4rem;
+
+ }
+ &__logo{
+height:13rem;
+ }
+}
+.text-box{
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        text-align: center;
+   
+    position: absolute;
+}
+.header-text{
+    color:$color-white;
+    font-weight: 300;
+}
+
+
+.btn,.btn:link,.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1.5rem 4rem;
+    display:inline-block;
+    border:none;
+    @include respond(tab-port){
+padding:1rem 3rem;
+    }
+}
+.btn:focus{
+    border: none;
+    outline:none;
+}
+    
+
+.btn-white{
+background-color:$color-white;
+color:$primary-color;
+}
+.btn-primary-color{
+    background-color:$primary-color;
+color:$color-white;
+}
+.btn-secondary{
+    color:$color-blacker;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1.5rem 4rem;
+    display:inline-block;
+    @include respond(tab-port){
+        padding: 1.5rem 3rem;
+    }
+}
+
+.btn-main{
+    margin-top:2rem;
+    border-radius:0.3rem;
+    position: relative;
+    font-size:2.5rem;
+    @include respond(tab-port){
+        margin-top:1.8rem;
+        font-size:1.8rem;
+    }
+}
+.btn-sub{
+    margin-top:2rem;
+    border-radius:0.3rem;
+    position: relative;
+    font-size:2.5rem;
+    @include respond(tab-port){
+        margin-top:1.5rem;
+        font-size:1.8rem;
+    }
+}
+
+.btn{
+    transition: all 0.2s;
+}
+.btn:hover{
+transform:translateY(-0.4rem);
+box-shadow: 0 1rem 2rem $color-black;
+}
+.btn:active{
+transform: translateY(0.2rem);
+box-shadow: 0 0.5rem 1rem $color-black;
+border:none;
+}
+.btn-sub::after{
+    content:"";
+    border: none;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:1;
+    z-index:-1;
+    transition: all .4s;
+    background-color: $primary-color; 
+}
+
+
+.btn-main::after{
+    content:"";
+    border:none;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:1;
+    z-index:-1;
+    transition: all .4s;
+    background-color: $color-white;
+}
+.btn-main:hover::after{
+    transform:Scale(1.2);
+    opacity:0;
+    border:none;
+}
+
+.btn-sub:hover::after{
+    transform:Scale(1.2);
+    opacity:0;
+    border: none;
+}
+
+
+
+
+
+// .btn-second:link,.btn-second:visited{
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     padding:1.5rem 4rem;
+//     display:inline-block;
+//     font-size:2.5rem;
+// }
+
+// .btn-white{
+// background-color:$color-white;
+// color:$primary-color;
+// }
+// .btn-main{
+//     margin-top:2rem;
+//     border-radius:0.3rem;
+//     position: relative;
+// }
+
+// .btn{
+//     transition: all 0.2s;
+// }
+// .btn:hover{
+// transform:translateY(-0.4rem);
+// box-shadow: 0 1rem 2rem $color-black;
+// }
+// .btn:active{
+// transform: translateY(0.2rem);
+// box-shadow: 0 0.5rem 1rem $color-black;
+// }
+
+// .btn::after{
+//     content:"";
+//     display:inline-block;
+//     width:100%;
+//     height:100%;
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     opacity:1;
+//     z-index:-1;
+//     transition: all .4s;
+//     background-color: $color-white;
+// }
+// .btn:hover::after{
+//     transform:Scale(1.2);
+//     opacity:0;
+// }
+
+
+
+
+
+
+
+
+
+

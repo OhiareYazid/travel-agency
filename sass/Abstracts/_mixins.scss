@@ -1,0 +1,48 @@
+/*CLEAR FOR FLOAT LAYOUT REUSABLE THROUGHOUT*/
+@mixin clearfix{
+    &::after {
+        content:"";
+        clear:both;
+        display: table;
+       
+    }
+    }
+    @mixin underline-text{
+        &::after{
+        content: "";
+        
+        width:32%;
+        border-bottom: 3.5px solid #ffffff; 
+        }
+        }
+        @mixin buttons ($bg-color,$text-color) {
+            display:block;
+            border: none;
+            
+            background-color:$bg-color;
+            
+            color: $text-color;
+            text-align: center;
+            backface-visibility: hidden;
+        
+        }
+
+        @mixin bold-underline($color){
+            border-bottom: 0.15rem solid $color;
+        }
+        @mixin respond($breakpoint){
+            @if $breakpoint == phone{
+                @media (max-width:37.5em) {@content};
+            }
+        
+        @if $breakpoint == tab-port{
+            @media (max-width:56.25em) {@content};
+        }
+        @if $breakpoint == tab-land{
+            @media (max-width:75em) {@content};
+        }
+    
+        @if $breakpoint == big-desktop{
+            @media (min-width:112.5em) {@content};
+        }
+    }

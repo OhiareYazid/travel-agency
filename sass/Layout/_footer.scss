@@ -1,0 +1,49 @@
+.footer{
+
+background-color: rgba($color-white,.8);
+padding:0.5rem;
+font-size:1.4rem;
+
+&__copyright{
+text-transform:uppercase;
+color:$color-black;
+
+}
+&__logo-box{
+text-align: center;
+margin-bottom:8rem;
+}
+
+&__logo{
+    width:10%;
+    height:auto;
+}
+&__navigation{
+
+}
+&__list{
+list-style: none;
+}
+&__item{
+display: inline-block;
+&:not(:last-child){
+    margin-right:2rem;
+}
+}
+&__link{
+    &:visited,&:link{
+        color:$color-blacker;
+        padding:1.4rem;
+        text-decoration:none;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: all 0.2s;
+    }
+    &:hover,&:active{
+        color:$primary-color;
+        padding:1rem;
+        box-shadow:0 1rem 2rem $color-black;
+    }
+
+}
+}
